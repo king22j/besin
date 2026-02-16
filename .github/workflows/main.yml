@@ -1,0 +1,29 @@
+name: Notion Besin Yükleyici
+
+# Bu action ne zaman çalışsın?
+on:
+  workflow_dispatch: # Bu, GitHub'da "Run Workflow" butonuna basınca çalışmasını sağlar.
+  # push:            # Eğer her 'push' yaptığında çalışsın istersen bu satırın başındaki # işaretini kaldır.
+
+jobs:
+  run-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Depoyu Çek (Checkout)
+        uses: actions/checkout@v3
+
+      - name: Python Kurulumu
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Kütüphaneleri Yükle
+        run: |
+          pip install requests
+
+      - name: Scripti Çalıştır
+        env: # İŞTE BURASI: GitHub Secrets'taki şifreleri koda aktarıyoruz
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          DATABASE_ID: ${{ secrets.DATABASE_ID }}
+        run: python main.py
