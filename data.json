@@ -1,1 +1,112 @@
-
+[
+  {
+    "name": "Yumurta (Haşlanmış)",
+    "kategori": "Protein Kaynağı",
+    "porsiyon": "1 Adet (Ortalama)",
+    "kalori": 78,
+    "protein": 6.3,
+    "karbonhidrat": 0.6,
+    "yag": 5.3,
+    "vitaminler": ["A", "D", "B12"],
+    "mineraller": ["Çinko", "Demir"]
+  },
+  {
+    "name": "Tavuk Göğsü (Haşlanmış/Izgara)",
+    "kategori": "Et / Kümes",
+    "porsiyon": "100g",
+    "kalori": 165,
+    "protein": 31,
+    "karbonhidrat": 0,
+    "yag": 3.6,
+    "vitaminler": ["B6", "B12"],
+    "mineraller": ["Selenyum", "Fosfor"]
+  },
+  {
+    "name": "Yulaf Ezmesi",
+    "kategori": "Tahıl",
+    "porsiyon": "100g",
+    "kalori": 389,
+    "protein": 16.9,
+    "karbonhidrat": 66,
+    "yag": 6.9,
+    "vitaminler": ["B1 (Tiamin)"],
+    "mineraller": ["Demir", "Magnezyum", "Çinko"]
+  },
+  {
+    "name": "Pirinç (Beyaz - Pişmiş)",
+    "kategori": "Tahıl",
+    "porsiyon": "100g",
+    "kalori": 130,
+    "protein": 2.7,
+    "karbonhidrat": 28,
+    "yag": 0.3,
+    "vitaminler": [],
+    "mineraller": ["Manganez"]
+  },
+  {
+    "name": "Dana Kıyma (Az Yağlı)",
+    "kategori": "Et / Kırmızı",
+    "porsiyon": "100g",
+    "kalori": 250,
+    "protein": 26,
+    "karbonhidrat": 0,
+    "yag": 15,
+    "vitaminler": ["B12", "B6"],
+    "mineraller": ["Demir", "Çinko"]
+  },
+  {
+    "name": "Badem (Çiğ)",
+    "kategori": "Kuruyemiş",
+    "porsiyon": "1 Avuç (25g)",
+    "kalori": 145,
+    "protein": 5.3,
+    "karbonhidrat": 5.5,
+    "yag": 12.5,
+    "vitaminler": ["E Vitamini"],
+    "mineraller": ["Magnezyum", "Kalsiyum"]
+  },
+  {
+    "name": "Muz",
+    "kategori": "Meyve",
+    "porsiyon": "1 Adet (Orta)",
+    "kalori": 105,
+    "protein": 1.3,
+    "karbonhidrat": 27,
+    "yag": 0.4,
+    "vitaminler": ["B6", "C"],
+    "mineraller": ["Potasyum", "Magnezyum"]
+  },
+  {
+    "name": "Ispanak (Çiğ)",
+    "kategori": "Sebze",
+    "porsiyon": "100g",
+    "kalori": 23,
+    "protein": 2.9,
+    "karbonhidrat": 3.6,
+    "yag": 0.4,
+    "vitaminler": ["A", "C", "K"],
+    "mineraller": ["Demir", "Folat"]
+  },
+  {
+    "name": "Somon Balığı",
+    "kategori": "Balık",
+    "porsiyon": "100g",
+    "kalori": 208,
+    "protein": 20,
+    "karbonhidrat": 0,
+    "yag": 13,
+    "vitaminler": ["D", "B12"],
+    "mineraller": ["Omega-3", "Selenyum"]
+  },
+  {
+    "name": "Lor Peyniri",
+    "kategori": "Süt Ürünü",
+    "porsiyon": "100g",
+    "kalori": 98,
+    "protein": 11,
+    "karbonhidrat": 3.4,
+    "yag": 4,
+    "vitaminler": ["B12", "A"],
+    "mineraller": ["Kalsiyum", "Fosfor"]
+  }
+]
