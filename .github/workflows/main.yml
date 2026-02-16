@@ -1,17 +1,19 @@
-name: ID Bulucu
+name: Notion Besin Yükleyici
 
+# Bu action ne zaman çalışsın?
 on:
-  workflow_dispatch: # Butona basınca çalışır
+  workflow_dispatch: # "Run workflow" butonuna basınca çalışır.
+  # push:            # Eğer her 'Save' (commit) yaptığında çalışsın istersen bu satırın başındaki # işaretini kaldır.
 
 jobs:
-  find-id:
+  add-food-data:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Dosyaları Çek
+      - name: Depoyu Çek (Checkout)
         uses: actions/checkout@v3
 
-      - name: Python Kur
+      - name: Python Kurulumu
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
@@ -20,8 +22,9 @@ jobs:
         run: |
           pip install requests python-dotenv
 
-      - name: ID Bulma Kodunu Çalıştır
+      - name: Scripti Çalıştır (main.py)
         env:
+          # GitHub Secrets'tan şifreleri alıp koda veriyoruz
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          # Database ID'yi henüz bilmediğimiz için buraya koymadık, kod zaten arayıp bulacak.
-        run: python bul.py
+          DATABASE_ID: ${{ secrets.DATABASE_ID }}
+        run: python main.py
